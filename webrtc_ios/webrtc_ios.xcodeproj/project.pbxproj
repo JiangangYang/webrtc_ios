@@ -1,0 +1,912 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6DC5C0A21B18BDB00A03BBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C0921B18BDB00A03BBC /* AppDelegate.m */; };
+		F6DC5C0D21B18BDB00A03BBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C0C21B18BDB00A03BBC /* ViewController.m */; };
+		F6DC5C1021B18BDB00A03BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C0E21B18BDB00A03BBC /* Main.storyboard */; };
+		F6DC5C1221B18BDC00A03BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C1121B18BDC00A03BBC /* Assets.xcassets */; };
+		F6DC5C1521B18BDC00A03BBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C1321B18BDC00A03BBC /* LaunchScreen.storyboard */; };
+		F6DC5C1821B18BDC00A03BBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C1721B18BDC00A03BBC /* main.m */; };
+		F6DC5C2221B18BDC00A03BBC /* webrtc_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C2121B18BDC00A03BBC /* webrtc_iosTests.m */; };
+		F6DC5C2D21B18BDC00A03BBC /* webrtc_iosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C2C21B18BDC00A03BBC /* webrtc_iosUITests.m */; };
+		F6DC5C3B21B18C1B00A03BBC /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DC5C3A21B18C1B00A03BBC /* WebRTC.framework */; };
+		F6DC5C9521B18CAB00A03BBC /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C3D21B18CAA00A03BBC /* SRWebSocket.m */; };
+		F6DC5C9621B18CAB00A03BBC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C4021B18CAA00A03BBC /* Icon.png */; };
+		F6DC5C9721B18CAB00A03BBC /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C4121B18CAA00A03BBC /* Icon-120.png */; };
+		F6DC5C9821B18CAB00A03BBC /* ARDCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C4A21B18CAA00A03BBC /* ARDCaptureController.m */; };
+		F6DC5C9921B18CAB00A03BBC /* ARDSignalingMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C4D21B18CAA00A03BBC /* ARDSignalingMessage.m */; };
+		F6DC5C9A21B18CAB00A03BBC /* ARDAppEngineClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C5221B18CAA00A03BBC /* ARDAppEngineClient.m */; };
+		F6DC5C9B21B18CAB00A03BBC /* RTCIceServer+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C5421B18CAA00A03BBC /* RTCIceServer+JSON.m */; };
+		F6DC5C9C21B18CAB00A03BBC /* ARDVideoCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C5521B18CAA00A03BBC /* ARDVideoCallViewController.m */; };
+		F6DC5C9D21B18CAB00A03BBC /* UIImage+ARDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C5821B18CAA00A03BBC /* UIImage+ARDUtilities.m */; };
+		F6DC5C9E21B18CAB00A03BBC /* ic_call_end_black_24dp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C5C21B18CAA00A03BBC /* ic_call_end_black_24dp@2x.png */; };
+		F6DC5C9F21B18CAB00A03BBC /* ic_settings_black_24dp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C5D21B18CAA00A03BBC /* ic_settings_black_24dp@2x.png */; };
+		F6DC5CA021B18CAB00A03BBC /* ic_surround_sound_black_24dp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C5E21B18CAA00A03BBC /* ic_surround_sound_black_24dp@2x.png */; };
+		F6DC5CA121B18CAB00A03BBC /* ic_clear_black_24dp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C5F21B18CAA00A03BBC /* ic_clear_black_24dp@2x.png */; };
+		F6DC5CA221B18CAB00A03BBC /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C6021B18CAA00A03BBC /* Roboto-Regular.ttf */; };
+		F6DC5CA321B18CAB00A03BBC /* iPhone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C6121B18CAA00A03BBC /* iPhone5@2x.png */; };
+		F6DC5CA421B18CAB00A03BBC /* ic_switch_video_black_24dp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C6221B18CAA00A03BBC /* ic_switch_video_black_24dp@2x.png */; };
+		F6DC5CA521B18CAB00A03BBC /* ic_call_end_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C6321B18CAA00A03BBC /* ic_call_end_black_24dp.png */; };
+		F6DC5CA621B18CAB00A03BBC /* foreman.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C6421B18CAA00A03BBC /* foreman.mp4 */; };
+		F6DC5CA721B18CAB00A03BBC /* ic_clear_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C6521B18CAA00A03BBC /* ic_clear_black_24dp.png */; };
+		F6DC5CA821B18CAB00A03BBC /* iPhone6p@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C6621B18CAA00A03BBC /* iPhone6p@3x.png */; };
+		F6DC5CA921B18CAB00A03BBC /* ic_surround_sound_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C6721B18CAA00A03BBC /* ic_surround_sound_black_24dp.png */; };
+		F6DC5CAA21B18CAB00A03BBC /* ic_switch_video_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C6821B18CAA00A03BBC /* ic_switch_video_black_24dp.png */; };
+		F6DC5CAB21B18CAB00A03BBC /* ic_settings_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C6921B18CAA00A03BBC /* ic_settings_black_24dp.png */; };
+		F6DC5CAC21B18CAB00A03BBC /* mozart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C6A21B18CAA00A03BBC /* mozart.mp3 */; };
+		F6DC5CAD21B18CAB00A03BBC /* iPhone6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C6B21B18CAA00A03BBC /* iPhone6@2x.png */; };
+		F6DC5CAE21B18CAB00A03BBC /* ARDMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C6F21B18CAA00A03BBC /* ARDMainView.m */; };
+		F6DC5CAF21B18CAB00A03BBC /* ARDStatsView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C7021B18CAA00A03BBC /* ARDStatsView.m */; };
+		F6DC5CB021B18CAB00A03BBC /* ARDFileCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C7221B18CAA00A03BBC /* ARDFileCaptureController.m */; };
+		F6DC5CB121B18CAB00A03BBC /* ARDSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C7321B18CAA00A03BBC /* ARDSettingsViewController.m */; };
+		F6DC5CB221B18CAB00A03BBC /* ARDVideoCallView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C7421B18CAA00A03BBC /* ARDVideoCallView.m */; };
+		F6DC5CB321B18CAB00A03BBC /* RTCVideoCodecInfo+HumanReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C7621B18CAB00A03BBC /* RTCVideoCodecInfo+HumanReadable.m */; };
+		F6DC5CB421B18CAB00A03BBC /* RTCMediaConstraints+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C7921B18CAB00A03BBC /* RTCMediaConstraints+JSON.m */; };
+		F6DC5CB521B18CAB00A03BBC /* ARDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C7B21B18CAB00A03BBC /* ARDUtilities.m */; };
+		F6DC5CB621B18CAB00A03BBC /* ARDJoinResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C7D21B18CAB00A03BBC /* ARDJoinResponse.m */; };
+		F6DC5CB721B18CAB00A03BBC /* ARDTURNClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C8021B18CAB00A03BBC /* ARDTURNClient.m */; };
+		F6DC5CB821B18CAB00A03BBC /* ARDWebSocketChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C8221B18CAB00A03BBC /* ARDWebSocketChannel.m */; };
+		F6DC5CB921B18CAB00A03BBC /* ARDSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C8421B18CAB00A03BBC /* ARDSettingsModel.m */; };
+		F6DC5CBA21B18CAB00A03BBC /* ARDStatsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C8521B18CAB00A03BBC /* ARDStatsBuilder.m */; };
+		F6DC5CBB21B18CAB00A03BBC /* ARDMessageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C8721B18CAB00A03BBC /* ARDMessageResponse.m */; };
+		F6DC5CBC21B18CAB00A03BBC /* RTCSessionDescription+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C8921B18CAB00A03BBC /* RTCSessionDescription+JSON.m */; };
+		F6DC5CBD21B18CAB00A03BBC /* ARDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C8A21B18CAB00A03BBC /* ARDMainViewController.m */; };
+		F6DC5CBE21B18CAB00A03BBC /* RTCIceCandidate+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C8B21B18CAB00A03BBC /* RTCIceCandidate+JSON.m */; };
+		F6DC5CBF21B18CAB00A03BBC /* ARDExternalSampleCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C8C21B18CAB00A03BBC /* ARDExternalSampleCapturer.m */; };
+		F6DC5CC021B18CAB00A03BBC /* ARDAppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C8F21B18CAB00A03BBC /* ARDAppClient.m */; };
+		F6DC5CC121B18CAB00A03BBC /* ARDSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C9021B18CAB00A03BBC /* ARDSettingsStore.m */; };
+		F6DC5CC221B18CAB00A03BBC /* ARDBitrateTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DC5C9221B18CAB00A03BBC /* ARDBitrateTracker.m */; };
+		F6DC5CC321B18CAB00A03BBC /* Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C9321B18CAB00A03BBC /* Icon-180.png */; };
+		F6DC5CC421B18CAB00A03BBC /* README in Resources */ = {isa = PBXBuildFile; fileRef = F6DC5C9421B18CAB00A03BBC /* README */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6DC5C1E21B18BDC00A03BBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DC5BFD21B18BDB00A03BBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6DC5C0421B18BDB00A03BBC;
+			remoteInfo = webrtc_ios;
+		};
+		F6DC5C2921B18BDC00A03BBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DC5BFD21B18BDB00A03BBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6DC5C0421B18BDB00A03BBC;
+			remoteInfo = webrtc_ios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F6DC5C0521B18BDB00A03BBC /* webrtc_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webrtc_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6DC5C0821B18BDB00A03BBC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F6DC5C0921B18BDB00A03BBC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F6DC5C0B21B18BDB00A03BBC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F6DC5C0C21B18BDB00A03BBC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F6DC5C0F21B18BDB00A03BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6DC5C1121B18BDC00A03BBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6DC5C1421B18BDC00A03BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6DC5C1621B18BDC00A03BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6DC5C1721B18BDC00A03BBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6DC5C1D21B18BDC00A03BBC /* webrtc_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = webrtc_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6DC5C2121B18BDC00A03BBC /* webrtc_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = webrtc_iosTests.m; sourceTree = "<group>"; };
+		F6DC5C2321B18BDC00A03BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6DC5C2821B18BDC00A03BBC /* webrtc_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = webrtc_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6DC5C2C21B18BDC00A03BBC /* webrtc_iosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = webrtc_iosUITests.m; sourceTree = "<group>"; };
+		F6DC5C2E21B18BDC00A03BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6DC5C3A21B18C1B00A03BBC /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		F6DC5C3D21B18CAA00A03BBC /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		F6DC5C3E21B18CAA00A03BBC /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		F6DC5C4021B18CAA00A03BBC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		F6DC5C4121B18CAA00A03BBC /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		F6DC5C4321B18CAA00A03BBC /* ARDJoinResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDJoinResponse.h; sourceTree = "<group>"; };
+		F6DC5C4421B18CAA00A03BBC /* RTCMediaConstraints+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCMediaConstraints+JSON.h"; sourceTree = "<group>"; };
+		F6DC5C4521B18CAA00A03BBC /* ARDMessageResponse+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDMessageResponse+Internal.h"; sourceTree = "<group>"; };
+		F6DC5C4621B18CAA00A03BBC /* ARDRoomServerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDRoomServerClient.h; sourceTree = "<group>"; };
+		F6DC5C4721B18CAA00A03BBC /* ARDSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSettingsModel.h; sourceTree = "<group>"; };
+		F6DC5C4821B18CAA00A03BBC /* ARDWebSocketChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDWebSocketChannel.h; sourceTree = "<group>"; };
+		F6DC5C4921B18CAA00A03BBC /* ARDTURNClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDTURNClient.h; sourceTree = "<group>"; };
+		F6DC5C4A21B18CAA00A03BBC /* ARDCaptureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDCaptureController.m; sourceTree = "<group>"; };
+		F6DC5C4B21B18CAA00A03BBC /* ARDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDMainViewController.h; sourceTree = "<group>"; };
+		F6DC5C4C21B18CAA00A03BBC /* RTCSessionDescription+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCSessionDescription+JSON.h"; sourceTree = "<group>"; };
+		F6DC5C4D21B18CAA00A03BBC /* ARDSignalingMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSignalingMessage.m; sourceTree = "<group>"; };
+		F6DC5C4E21B18CAA00A03BBC /* ARDMessageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDMessageResponse.h; sourceTree = "<group>"; };
+		F6DC5C4F21B18CAA00A03BBC /* ARDStatsBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDStatsBuilder.h; sourceTree = "<group>"; };
+		F6DC5C5021B18CAA00A03BBC /* ARDBitrateTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDBitrateTracker.h; sourceTree = "<group>"; };
+		F6DC5C5121B18CAA00A03BBC /* ARDSettingsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSettingsStore.h; sourceTree = "<group>"; };
+		F6DC5C5221B18CAA00A03BBC /* ARDAppEngineClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDAppEngineClient.m; sourceTree = "<group>"; };
+		F6DC5C5321B18CAA00A03BBC /* ARDAppClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDAppClient.h; sourceTree = "<group>"; };
+		F6DC5C5421B18CAA00A03BBC /* RTCIceServer+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCIceServer+JSON.m"; sourceTree = "<group>"; };
+		F6DC5C5521B18CAA00A03BBC /* ARDVideoCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDVideoCallViewController.m; sourceTree = "<group>"; };
+		F6DC5C5621B18CAA00A03BBC /* ARDExternalSampleCapturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDExternalSampleCapturer.h; sourceTree = "<group>"; };
+		F6DC5C5821B18CAA00A03BBC /* UIImage+ARDUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ARDUtilities.m"; sourceTree = "<group>"; };
+		F6DC5C5921B18CAA00A03BBC /* ARDStatsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDStatsView.h; sourceTree = "<group>"; };
+		F6DC5C5A21B18CAA00A03BBC /* ARDFileCaptureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDFileCaptureController.h; sourceTree = "<group>"; };
+		F6DC5C5C21B18CAA00A03BBC /* ic_call_end_black_24dp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_call_end_black_24dp@2x.png"; sourceTree = "<group>"; };
+		F6DC5C5D21B18CAA00A03BBC /* ic_settings_black_24dp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_settings_black_24dp@2x.png"; sourceTree = "<group>"; };
+		F6DC5C5E21B18CAA00A03BBC /* ic_surround_sound_black_24dp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_surround_sound_black_24dp@2x.png"; sourceTree = "<group>"; };
+		F6DC5C5F21B18CAA00A03BBC /* ic_clear_black_24dp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_clear_black_24dp@2x.png"; sourceTree = "<group>"; };
+		F6DC5C6021B18CAA00A03BBC /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		F6DC5C6121B18CAA00A03BBC /* iPhone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone5@2x.png"; sourceTree = "<group>"; };
+		F6DC5C6221B18CAA00A03BBC /* ic_switch_video_black_24dp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_switch_video_black_24dp@2x.png"; sourceTree = "<group>"; };
+		F6DC5C6321B18CAA00A03BBC /* ic_call_end_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_call_end_black_24dp.png; sourceTree = "<group>"; };
+		F6DC5C6421B18CAA00A03BBC /* foreman.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = foreman.mp4; sourceTree = "<group>"; };
+		F6DC5C6521B18CAA00A03BBC /* ic_clear_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_clear_black_24dp.png; sourceTree = "<group>"; };
+		F6DC5C6621B18CAA00A03BBC /* iPhone6p@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6p@3x.png"; sourceTree = "<group>"; };
+		F6DC5C6721B18CAA00A03BBC /* ic_surround_sound_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_surround_sound_black_24dp.png; sourceTree = "<group>"; };
+		F6DC5C6821B18CAA00A03BBC /* ic_switch_video_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_switch_video_black_24dp.png; sourceTree = "<group>"; };
+		F6DC5C6921B18CAA00A03BBC /* ic_settings_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_settings_black_24dp.png; sourceTree = "<group>"; };
+		F6DC5C6A21B18CAA00A03BBC /* mozart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mozart.mp3; sourceTree = "<group>"; };
+		F6DC5C6B21B18CAA00A03BBC /* iPhone6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6@2x.png"; sourceTree = "<group>"; };
+		F6DC5C6C21B18CAA00A03BBC /* RTCVideoCodecInfo+HumanReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCVideoCodecInfo+HumanReadable.h"; sourceTree = "<group>"; };
+		F6DC5C6D21B18CAA00A03BBC /* ARDSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSettingsViewController.h; sourceTree = "<group>"; };
+		F6DC5C6E21B18CAA00A03BBC /* ARDVideoCallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDVideoCallView.h; sourceTree = "<group>"; };
+		F6DC5C6F21B18CAA00A03BBC /* ARDMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDMainView.m; sourceTree = "<group>"; };
+		F6DC5C7021B18CAA00A03BBC /* ARDStatsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDStatsView.m; sourceTree = "<group>"; };
+		F6DC5C7121B18CAA00A03BBC /* UIImage+ARDUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ARDUtilities.h"; sourceTree = "<group>"; };
+		F6DC5C7221B18CAA00A03BBC /* ARDFileCaptureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDFileCaptureController.m; sourceTree = "<group>"; };
+		F6DC5C7321B18CAA00A03BBC /* ARDSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSettingsViewController.m; sourceTree = "<group>"; };
+		F6DC5C7421B18CAA00A03BBC /* ARDVideoCallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDVideoCallView.m; sourceTree = "<group>"; };
+		F6DC5C7521B18CAA00A03BBC /* ARDMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDMainView.h; sourceTree = "<group>"; };
+		F6DC5C7621B18CAB00A03BBC /* RTCVideoCodecInfo+HumanReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCVideoCodecInfo+HumanReadable.m"; sourceTree = "<group>"; };
+		F6DC5C7721B18CAB00A03BBC /* RTCIceCandidate+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCIceCandidate+JSON.h"; sourceTree = "<group>"; };
+		F6DC5C7821B18CAB00A03BBC /* ARDSettingsModel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDSettingsModel+Private.h"; sourceTree = "<group>"; };
+		F6DC5C7921B18CAB00A03BBC /* RTCMediaConstraints+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCMediaConstraints+JSON.m"; sourceTree = "<group>"; };
+		F6DC5C7B21B18CAB00A03BBC /* ARDUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDUtilities.m; sourceTree = "<group>"; };
+		F6DC5C7C21B18CAB00A03BBC /* ARDUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDUtilities.h; sourceTree = "<group>"; };
+		F6DC5C7D21B18CAB00A03BBC /* ARDJoinResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDJoinResponse.m; sourceTree = "<group>"; };
+		F6DC5C7E21B18CAB00A03BBC /* ARDJoinResponse+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDJoinResponse+Internal.h"; sourceTree = "<group>"; };
+		F6DC5C7F21B18CAB00A03BBC /* ARDCaptureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDCaptureController.h; sourceTree = "<group>"; };
+		F6DC5C8021B18CAB00A03BBC /* ARDTURNClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDTURNClient.m; sourceTree = "<group>"; };
+		F6DC5C8121B18CAB00A03BBC /* ARDSignalingChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSignalingChannel.h; sourceTree = "<group>"; };
+		F6DC5C8221B18CAB00A03BBC /* ARDWebSocketChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDWebSocketChannel.m; sourceTree = "<group>"; };
+		F6DC5C8321B18CAB00A03BBC /* ARDTURNClient+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDTURNClient+Internal.h"; sourceTree = "<group>"; };
+		F6DC5C8421B18CAB00A03BBC /* ARDSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSettingsModel.m; sourceTree = "<group>"; };
+		F6DC5C8521B18CAB00A03BBC /* ARDStatsBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDStatsBuilder.m; sourceTree = "<group>"; };
+		F6DC5C8621B18CAB00A03BBC /* ARDSignalingMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSignalingMessage.h; sourceTree = "<group>"; };
+		F6DC5C8721B18CAB00A03BBC /* ARDMessageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDMessageResponse.m; sourceTree = "<group>"; };
+		F6DC5C8821B18CAB00A03BBC /* ARDAppClient+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDAppClient+Internal.h"; sourceTree = "<group>"; };
+		F6DC5C8921B18CAB00A03BBC /* RTCSessionDescription+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCSessionDescription+JSON.m"; sourceTree = "<group>"; };
+		F6DC5C8A21B18CAB00A03BBC /* ARDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDMainViewController.m; sourceTree = "<group>"; };
+		F6DC5C8B21B18CAB00A03BBC /* RTCIceCandidate+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCIceCandidate+JSON.m"; sourceTree = "<group>"; };
+		F6DC5C8C21B18CAB00A03BBC /* ARDExternalSampleCapturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDExternalSampleCapturer.m; sourceTree = "<group>"; };
+		F6DC5C8D21B18CAB00A03BBC /* RTCIceServer+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCIceServer+JSON.h"; sourceTree = "<group>"; };
+		F6DC5C8E21B18CAB00A03BBC /* ARDVideoCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDVideoCallViewController.h; sourceTree = "<group>"; };
+		F6DC5C8F21B18CAB00A03BBC /* ARDAppClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDAppClient.m; sourceTree = "<group>"; };
+		F6DC5C9021B18CAB00A03BBC /* ARDSettingsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSettingsStore.m; sourceTree = "<group>"; };
+		F6DC5C9121B18CAB00A03BBC /* ARDAppEngineClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDAppEngineClient.h; sourceTree = "<group>"; };
+		F6DC5C9221B18CAB00A03BBC /* ARDBitrateTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDBitrateTracker.m; sourceTree = "<group>"; };
+		F6DC5C9321B18CAB00A03BBC /* Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-180.png"; sourceTree = "<group>"; };
+		F6DC5C9421B18CAB00A03BBC /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6DC5C0221B18BDB00A03BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6DC5C3B21B18C1B00A03BBC /* WebRTC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DC5C1A21B18BDC00A03BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DC5C2521B18BDC00A03BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6DC5BFC21B18BDB00A03BBC = {
+			isa = PBXGroup;
+			children = (
+				F6DC5C0721B18BDB00A03BBC /* webrtc_ios */,
+				F6DC5C2021B18BDC00A03BBC /* webrtc_iosTests */,
+				F6DC5C2B21B18BDC00A03BBC /* webrtc_iosUITests */,
+				F6DC5C0621B18BDB00A03BBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6DC5C0621B18BDB00A03BBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6DC5C0521B18BDB00A03BBC /* webrtc_ios.app */,
+				F6DC5C1D21B18BDC00A03BBC /* webrtc_iosTests.xctest */,
+				F6DC5C2821B18BDC00A03BBC /* webrtc_iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6DC5C0721B18BDB00A03BBC /* webrtc_ios */ = {
+			isa = PBXGroup;
+			children = (
+				F6DC5C3A21B18C1B00A03BBC /* WebRTC.framework */,
+				F6DC5C3F21B18CAA00A03BBC /* objc */,
+				F6DC5C3C21B18CAA00A03BBC /* SocketRocket */,
+				F6DC5C0821B18BDB00A03BBC /* AppDelegate.h */,
+				F6DC5C0921B18BDB00A03BBC /* AppDelegate.m */,
+				F6DC5C0B21B18BDB00A03BBC /* ViewController.h */,
+				F6DC5C0C21B18BDB00A03BBC /* ViewController.m */,
+				F6DC5C0E21B18BDB00A03BBC /* Main.storyboard */,
+				F6DC5C1121B18BDC00A03BBC /* Assets.xcassets */,
+				F6DC5C1321B18BDC00A03BBC /* LaunchScreen.storyboard */,
+				F6DC5C1621B18BDC00A03BBC /* Info.plist */,
+				F6DC5C1721B18BDC00A03BBC /* main.m */,
+			);
+			path = webrtc_ios;
+			sourceTree = "<group>";
+		};
+		F6DC5C2021B18BDC00A03BBC /* webrtc_iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6DC5C2121B18BDC00A03BBC /* webrtc_iosTests.m */,
+				F6DC5C2321B18BDC00A03BBC /* Info.plist */,
+			);
+			path = webrtc_iosTests;
+			sourceTree = "<group>";
+		};
+		F6DC5C2B21B18BDC00A03BBC /* webrtc_iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F6DC5C2C21B18BDC00A03BBC /* webrtc_iosUITests.m */,
+				F6DC5C2E21B18BDC00A03BBC /* Info.plist */,
+			);
+			path = webrtc_iosUITests;
+			sourceTree = "<group>";
+		};
+		F6DC5C3C21B18CAA00A03BBC /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				F6DC5C3D21B18CAA00A03BBC /* SRWebSocket.m */,
+				F6DC5C3E21B18CAA00A03BBC /* SRWebSocket.h */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		F6DC5C3F21B18CAA00A03BBC /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				F6DC5C4221B18CAA00A03BBC /* AppRTCMobile */,
+				F6DC5C4021B18CAA00A03BBC /* Icon.png */,
+				F6DC5C4121B18CAA00A03BBC /* Icon-120.png */,
+				F6DC5C9321B18CAB00A03BBC /* Icon-180.png */,
+				F6DC5C9421B18CAB00A03BBC /* README */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
+		F6DC5C4221B18CAA00A03BBC /* AppRTCMobile */ = {
+			isa = PBXGroup;
+			children = (
+				F6DC5C4321B18CAA00A03BBC /* ARDJoinResponse.h */,
+				F6DC5C4421B18CAA00A03BBC /* RTCMediaConstraints+JSON.h */,
+				F6DC5C4521B18CAA00A03BBC /* ARDMessageResponse+Internal.h */,
+				F6DC5C4621B18CAA00A03BBC /* ARDRoomServerClient.h */,
+				F6DC5C4721B18CAA00A03BBC /* ARDSettingsModel.h */,
+				F6DC5C4821B18CAA00A03BBC /* ARDWebSocketChannel.h */,
+				F6DC5C4921B18CAA00A03BBC /* ARDTURNClient.h */,
+				F6DC5C4A21B18CAA00A03BBC /* ARDCaptureController.m */,
+				F6DC5C4B21B18CAA00A03BBC /* ARDMainViewController.h */,
+				F6DC5C4C21B18CAA00A03BBC /* RTCSessionDescription+JSON.h */,
+				F6DC5C4D21B18CAA00A03BBC /* ARDSignalingMessage.m */,
+				F6DC5C4E21B18CAA00A03BBC /* ARDMessageResponse.h */,
+				F6DC5C4F21B18CAA00A03BBC /* ARDStatsBuilder.h */,
+				F6DC5C5021B18CAA00A03BBC /* ARDBitrateTracker.h */,
+				F6DC5C5121B18CAA00A03BBC /* ARDSettingsStore.h */,
+				F6DC5C5221B18CAA00A03BBC /* ARDAppEngineClient.m */,
+				F6DC5C5321B18CAA00A03BBC /* ARDAppClient.h */,
+				F6DC5C5421B18CAA00A03BBC /* RTCIceServer+JSON.m */,
+				F6DC5C5521B18CAA00A03BBC /* ARDVideoCallViewController.m */,
+				F6DC5C5621B18CAA00A03BBC /* ARDExternalSampleCapturer.h */,
+				F6DC5C5721B18CAA00A03BBC /* ios */,
+				F6DC5C7721B18CAB00A03BBC /* RTCIceCandidate+JSON.h */,
+				F6DC5C7821B18CAB00A03BBC /* ARDSettingsModel+Private.h */,
+				F6DC5C7921B18CAB00A03BBC /* RTCMediaConstraints+JSON.m */,
+				F6DC5C7A21B18CAB00A03BBC /* common */,
+				F6DC5C7D21B18CAB00A03BBC /* ARDJoinResponse.m */,
+				F6DC5C7E21B18CAB00A03BBC /* ARDJoinResponse+Internal.h */,
+				F6DC5C7F21B18CAB00A03BBC /* ARDCaptureController.h */,
+				F6DC5C8021B18CAB00A03BBC /* ARDTURNClient.m */,
+				F6DC5C8121B18CAB00A03BBC /* ARDSignalingChannel.h */,
+				F6DC5C8221B18CAB00A03BBC /* ARDWebSocketChannel.m */,
+				F6DC5C8321B18CAB00A03BBC /* ARDTURNClient+Internal.h */,
+				F6DC5C8421B18CAB00A03BBC /* ARDSettingsModel.m */,
+				F6DC5C8521B18CAB00A03BBC /* ARDStatsBuilder.m */,
+				F6DC5C8621B18CAB00A03BBC /* ARDSignalingMessage.h */,
+				F6DC5C8721B18CAB00A03BBC /* ARDMessageResponse.m */,
+				F6DC5C8821B18CAB00A03BBC /* ARDAppClient+Internal.h */,
+				F6DC5C8921B18CAB00A03BBC /* RTCSessionDescription+JSON.m */,
+				F6DC5C8A21B18CAB00A03BBC /* ARDMainViewController.m */,
+				F6DC5C8B21B18CAB00A03BBC /* RTCIceCandidate+JSON.m */,
+				F6DC5C8C21B18CAB00A03BBC /* ARDExternalSampleCapturer.m */,
+				F6DC5C8D21B18CAB00A03BBC /* RTCIceServer+JSON.h */,
+				F6DC5C8E21B18CAB00A03BBC /* ARDVideoCallViewController.h */,
+				F6DC5C8F21B18CAB00A03BBC /* ARDAppClient.m */,
+				F6DC5C9021B18CAB00A03BBC /* ARDSettingsStore.m */,
+				F6DC5C9121B18CAB00A03BBC /* ARDAppEngineClient.h */,
+				F6DC5C9221B18CAB00A03BBC /* ARDBitrateTracker.m */,
+			);
+			path = AppRTCMobile;
+			sourceTree = "<group>";
+		};
+		F6DC5C5721B18CAA00A03BBC /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				F6DC5C5821B18CAA00A03BBC /* UIImage+ARDUtilities.m */,
+				F6DC5C5921B18CAA00A03BBC /* ARDStatsView.h */,
+				F6DC5C5A21B18CAA00A03BBC /* ARDFileCaptureController.h */,
+				F6DC5C5B21B18CAA00A03BBC /* resources */,
+				F6DC5C6C21B18CAA00A03BBC /* RTCVideoCodecInfo+HumanReadable.h */,
+				F6DC5C6D21B18CAA00A03BBC /* ARDSettingsViewController.h */,
+				F6DC5C6E21B18CAA00A03BBC /* ARDVideoCallView.h */,
+				F6DC5C6F21B18CAA00A03BBC /* ARDMainView.m */,
+				F6DC5C7021B18CAA00A03BBC /* ARDStatsView.m */,
+				F6DC5C7121B18CAA00A03BBC /* UIImage+ARDUtilities.h */,
+				F6DC5C7221B18CAA00A03BBC /* ARDFileCaptureController.m */,
+				F6DC5C7321B18CAA00A03BBC /* ARDSettingsViewController.m */,
+				F6DC5C7421B18CAA00A03BBC /* ARDVideoCallView.m */,
+				F6DC5C7521B18CAA00A03BBC /* ARDMainView.h */,
+				F6DC5C7621B18CAB00A03BBC /* RTCVideoCodecInfo+HumanReadable.m */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		F6DC5C5B21B18CAA00A03BBC /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				F6DC5C5C21B18CAA00A03BBC /* ic_call_end_black_24dp@2x.png */,
+				F6DC5C5D21B18CAA00A03BBC /* ic_settings_black_24dp@2x.png */,
+				F6DC5C5E21B18CAA00A03BBC /* ic_surround_sound_black_24dp@2x.png */,
+				F6DC5C5F21B18CAA00A03BBC /* ic_clear_black_24dp@2x.png */,
+				F6DC5C6021B18CAA00A03BBC /* Roboto-Regular.ttf */,
+				F6DC5C6121B18CAA00A03BBC /* iPhone5@2x.png */,
+				F6DC5C6221B18CAA00A03BBC /* ic_switch_video_black_24dp@2x.png */,
+				F6DC5C6321B18CAA00A03BBC /* ic_call_end_black_24dp.png */,
+				F6DC5C6421B18CAA00A03BBC /* foreman.mp4 */,
+				F6DC5C6521B18CAA00A03BBC /* ic_clear_black_24dp.png */,
+				F6DC5C6621B18CAA00A03BBC /* iPhone6p@3x.png */,
+				F6DC5C6721B18CAA00A03BBC /* ic_surround_sound_black_24dp.png */,
+				F6DC5C6821B18CAA00A03BBC /* ic_switch_video_black_24dp.png */,
+				F6DC5C6921B18CAA00A03BBC /* ic_settings_black_24dp.png */,
+				F6DC5C6A21B18CAA00A03BBC /* mozart.mp3 */,
+				F6DC5C6B21B18CAA00A03BBC /* iPhone6@2x.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		F6DC5C7A21B18CAB00A03BBC /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F6DC5C7B21B18CAB00A03BBC /* ARDUtilities.m */,
+				F6DC5C7C21B18CAB00A03BBC /* ARDUtilities.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6DC5C0421B18BDB00A03BBC /* webrtc_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6DC5C3121B18BDC00A03BBC /* Build configuration list for PBXNativeTarget "webrtc_ios" */;
+			buildPhases = (
+				F6DC5C0121B18BDB00A03BBC /* Sources */,
+				F6DC5C0221B18BDB00A03BBC /* Frameworks */,
+				F6DC5C0321B18BDB00A03BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = webrtc_ios;
+			productName = webrtc_ios;
+			productReference = F6DC5C0521B18BDB00A03BBC /* webrtc_ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6DC5C1C21B18BDC00A03BBC /* webrtc_iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6DC5C3421B18BDC00A03BBC /* Build configuration list for PBXNativeTarget "webrtc_iosTests" */;
+			buildPhases = (
+				F6DC5C1921B18BDC00A03BBC /* Sources */,
+				F6DC5C1A21B18BDC00A03BBC /* Frameworks */,
+				F6DC5C1B21B18BDC00A03BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6DC5C1F21B18BDC00A03BBC /* PBXTargetDependency */,
+			);
+			name = webrtc_iosTests;
+			productName = webrtc_iosTests;
+			productReference = F6DC5C1D21B18BDC00A03BBC /* webrtc_iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F6DC5C2721B18BDC00A03BBC /* webrtc_iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6DC5C3721B18BDC00A03BBC /* Build configuration list for PBXNativeTarget "webrtc_iosUITests" */;
+			buildPhases = (
+				F6DC5C2421B18BDC00A03BBC /* Sources */,
+				F6DC5C2521B18BDC00A03BBC /* Frameworks */,
+				F6DC5C2621B18BDC00A03BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6DC5C2A21B18BDC00A03BBC /* PBXTargetDependency */,
+			);
+			name = webrtc_iosUITests;
+			productName = webrtc_iosUITests;
+			productReference = F6DC5C2821B18BDC00A03BBC /* webrtc_iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6DC5BFD21B18BDB00A03BBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Yang Jiangang";
+				TargetAttributes = {
+					F6DC5C0421B18BDB00A03BBC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F6DC5C1C21B18BDC00A03BBC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F6DC5C0421B18BDB00A03BBC;
+					};
+					F6DC5C2721B18BDC00A03BBC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F6DC5C0421B18BDB00A03BBC;
+					};
+				};
+			};
+			buildConfigurationList = F6DC5C0021B18BDB00A03BBC /* Build configuration list for PBXProject "webrtc_ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6DC5BFC21B18BDB00A03BBC;
+			productRefGroup = F6DC5C0621B18BDB00A03BBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6DC5C0421B18BDB00A03BBC /* webrtc_ios */,
+				F6DC5C1C21B18BDC00A03BBC /* webrtc_iosTests */,
+				F6DC5C2721B18BDC00A03BBC /* webrtc_iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6DC5C0321B18BDB00A03BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6DC5C9E21B18CAB00A03BBC /* ic_call_end_black_24dp@2x.png in Resources */,
+				F6DC5CAC21B18CAB00A03BBC /* mozart.mp3 in Resources */,
+				F6DC5CC321B18CAB00A03BBC /* Icon-180.png in Resources */,
+				F6DC5CA121B18CAB00A03BBC /* ic_clear_black_24dp@2x.png in Resources */,
+				F6DC5CA221B18CAB00A03BBC /* Roboto-Regular.ttf in Resources */,
+				F6DC5CA521B18CAB00A03BBC /* ic_call_end_black_24dp.png in Resources */,
+				F6DC5CA921B18CAB00A03BBC /* ic_surround_sound_black_24dp.png in Resources */,
+				F6DC5C9621B18CAB00A03BBC /* Icon.png in Resources */,
+				F6DC5CA021B18CAB00A03BBC /* ic_surround_sound_black_24dp@2x.png in Resources */,
+				F6DC5CA821B18CAB00A03BBC /* iPhone6p@3x.png in Resources */,
+				F6DC5C1521B18BDC00A03BBC /* LaunchScreen.storyboard in Resources */,
+				F6DC5CA421B18CAB00A03BBC /* ic_switch_video_black_24dp@2x.png in Resources */,
+				F6DC5CAD21B18CAB00A03BBC /* iPhone6@2x.png in Resources */,
+				F6DC5CA621B18CAB00A03BBC /* foreman.mp4 in Resources */,
+				F6DC5CA321B18CAB00A03BBC /* iPhone5@2x.png in Resources */,
+				F6DC5C1221B18BDC00A03BBC /* Assets.xcassets in Resources */,
+				F6DC5CAB21B18CAB00A03BBC /* ic_settings_black_24dp.png in Resources */,
+				F6DC5C9721B18CAB00A03BBC /* Icon-120.png in Resources */,
+				F6DC5C9F21B18CAB00A03BBC /* ic_settings_black_24dp@2x.png in Resources */,
+				F6DC5CAA21B18CAB00A03BBC /* ic_switch_video_black_24dp.png in Resources */,
+				F6DC5CC421B18CAB00A03BBC /* README in Resources */,
+				F6DC5CA721B18CAB00A03BBC /* ic_clear_black_24dp.png in Resources */,
+				F6DC5C1021B18BDB00A03BBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DC5C1B21B18BDC00A03BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DC5C2621B18BDC00A03BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6DC5C0121B18BDB00A03BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6DC5CB021B18CAB00A03BBC /* ARDFileCaptureController.m in Sources */,
+				F6DC5CBC21B18CAB00A03BBC /* RTCSessionDescription+JSON.m in Sources */,
+				F6DC5CBA21B18CAB00A03BBC /* ARDStatsBuilder.m in Sources */,
+				F6DC5C9C21B18CAB00A03BBC /* ARDVideoCallViewController.m in Sources */,
+				F6DC5CB621B18CAB00A03BBC /* ARDJoinResponse.m in Sources */,
+				F6DC5CB221B18CAB00A03BBC /* ARDVideoCallView.m in Sources */,
+				F6DC5C9521B18CAB00A03BBC /* SRWebSocket.m in Sources */,
+				F6DC5CB521B18CAB00A03BBC /* ARDUtilities.m in Sources */,
+				F6DC5C0D21B18BDB00A03BBC /* ViewController.m in Sources */,
+				F6DC5C1821B18BDC00A03BBC /* main.m in Sources */,
+				F6DC5C9D21B18CAB00A03BBC /* UIImage+ARDUtilities.m in Sources */,
+				F6DC5CBD21B18CAB00A03BBC /* ARDMainViewController.m in Sources */,
+				F6DC5CBB21B18CAB00A03BBC /* ARDMessageResponse.m in Sources */,
+				F6DC5C9A21B18CAB00A03BBC /* ARDAppEngineClient.m in Sources */,
+				F6DC5CB921B18CAB00A03BBC /* ARDSettingsModel.m in Sources */,
+				F6DC5CAF21B18CAB00A03BBC /* ARDStatsView.m in Sources */,
+				F6DC5CC021B18CAB00A03BBC /* ARDAppClient.m in Sources */,
+				F6DC5CBF21B18CAB00A03BBC /* ARDExternalSampleCapturer.m in Sources */,
+				F6DC5CBE21B18CAB00A03BBC /* RTCIceCandidate+JSON.m in Sources */,
+				F6DC5C9B21B18CAB00A03BBC /* RTCIceServer+JSON.m in Sources */,
+				F6DC5CAE21B18CAB00A03BBC /* ARDMainView.m in Sources */,
+				F6DC5C9821B18CAB00A03BBC /* ARDCaptureController.m in Sources */,
+				F6DC5CB121B18CAB00A03BBC /* ARDSettingsViewController.m in Sources */,
+				F6DC5C9921B18CAB00A03BBC /* ARDSignalingMessage.m in Sources */,
+				F6DC5CB821B18CAB00A03BBC /* ARDWebSocketChannel.m in Sources */,
+				F6DC5CB421B18CAB00A03BBC /* RTCMediaConstraints+JSON.m in Sources */,
+				F6DC5CB721B18CAB00A03BBC /* ARDTURNClient.m in Sources */,
+				F6DC5CB321B18CAB00A03BBC /* RTCVideoCodecInfo+HumanReadable.m in Sources */,
+				F6DC5CC221B18CAB00A03BBC /* ARDBitrateTracker.m in Sources */,
+				F6DC5CC121B18CAB00A03BBC /* ARDSettingsStore.m in Sources */,
+				F6DC5C0A21B18BDB00A03BBC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DC5C1921B18BDC00A03BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6DC5C2221B18BDC00A03BBC /* webrtc_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DC5C2421B18BDC00A03BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6DC5C2D21B18BDC00A03BBC /* webrtc_iosUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6DC5C1F21B18BDC00A03BBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6DC5C0421B18BDB00A03BBC /* webrtc_ios */;
+			targetProxy = F6DC5C1E21B18BDC00A03BBC /* PBXContainerItemProxy */;
+		};
+		F6DC5C2A21B18BDC00A03BBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6DC5C0421B18BDB00A03BBC /* webrtc_ios */;
+			targetProxy = F6DC5C2921B18BDC00A03BBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6DC5C0E21B18BDB00A03BBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6DC5C0F21B18BDB00A03BBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6DC5C1321B18BDC00A03BBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6DC5C1421B18BDC00A03BBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6DC5C2F21B18BDC00A03BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F6DC5C3021B18BDC00A03BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6DC5C3221B18BDC00A03BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HKHF23MEHS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/webrtc_ios",
+				);
+				INFOPLIST_FILE = webrtc_ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.welines.webrtc-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		F6DC5C3321B18BDC00A03BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HKHF23MEHS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/webrtc_ios",
+				);
+				INFOPLIST_FILE = webrtc_ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.welines.webrtc-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
+		F6DC5C3521B18BDC00A03BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HKHF23MEHS;
+				INFOPLIST_FILE = webrtc_iosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.welines.webrtc-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/webrtc_ios.app/webrtc_ios";
+			};
+			name = Debug;
+		};
+		F6DC5C3621B18BDC00A03BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HKHF23MEHS;
+				INFOPLIST_FILE = webrtc_iosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.welines.webrtc-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/webrtc_ios.app/webrtc_ios";
+			};
+			name = Release;
+		};
+		F6DC5C3821B18BDC00A03BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HKHF23MEHS;
+				INFOPLIST_FILE = webrtc_iosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.welines.webrtc-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = webrtc_ios;
+			};
+			name = Debug;
+		};
+		F6DC5C3921B18BDC00A03BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HKHF23MEHS;
+				INFOPLIST_FILE = webrtc_iosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.welines.webrtc-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = webrtc_ios;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6DC5C0021B18BDB00A03BBC /* Build configuration list for PBXProject "webrtc_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6DC5C2F21B18BDC00A03BBC /* Debug */,
+				F6DC5C3021B18BDC00A03BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6DC5C3121B18BDC00A03BBC /* Build configuration list for PBXNativeTarget "webrtc_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6DC5C3221B18BDC00A03BBC /* Debug */,
+				F6DC5C3321B18BDC00A03BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6DC5C3421B18BDC00A03BBC /* Build configuration list for PBXNativeTarget "webrtc_iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6DC5C3521B18BDC00A03BBC /* Debug */,
+				F6DC5C3621B18BDC00A03BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6DC5C3721B18BDC00A03BBC /* Build configuration list for PBXNativeTarget "webrtc_iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6DC5C3821B18BDC00A03BBC /* Debug */,
+				F6DC5C3921B18BDC00A03BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6DC5BFD21B18BDB00A03BBC /* Project object */;
+}
